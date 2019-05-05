@@ -1,23 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+// var React = require('react')
 import './App.css';
+import TextField from '@material-ui/core/FilledInput';
+import todoContainer from './todoContainer';
 
 function App() {
   return (
     <div className="App">
+
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit
+
+          <code>src/App.js</code>
+
+          and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <fghfgh />
+        <TextField
+          id="outlined-multiline-static"
+          label="Multiline"
+          multiline
+          rows="4"
+          defaultValue="Default Value"
+          // className={classes.textField}
+          margin="normal"
+          variant="outlined"
+        />
+
+
       </header>
     </div>
   );
